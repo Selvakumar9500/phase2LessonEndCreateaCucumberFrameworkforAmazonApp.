@@ -32,6 +32,7 @@ public class AmazonPageTest {
 	Thread.sleep(1500);
 	}
 
+	
 	@Then("User navigates to Mobiles & accessories")
 	public void user_navigates_to_mobiles_accessories() throws InterruptedException {
 		Actions a = new Actions(driver);
