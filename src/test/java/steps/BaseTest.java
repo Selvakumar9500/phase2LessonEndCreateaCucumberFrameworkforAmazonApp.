@@ -35,7 +35,7 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get("https://www.amazon.in/");
-		Thread.sleep(3000);
+		Thread.sleep(3500);
 	}
 	@After
 	public void CloseBrowser()
