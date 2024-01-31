@@ -29,16 +29,15 @@ public class AmazonPageTest {
 
 	mobiles.click();
 	
-	Thread.sleep(2500);
+	Thread.sleep(1500);
 	}
 
-	
 	@Then("User navigates to Mobiles & accessories")
 	public void user_navigates_to_mobiles_accessories() throws InterruptedException {
 		Actions a = new Actions(driver);
 		WebElement MA = driver.findElement(By.xpath("(//span[@class='nav-a-content'][normalize-space()='Mobiles & Accessories'])[1]"));
 		a.moveToElement(MA).build().perform();
-		Thread.sleep(2500);
+		Thread.sleep(1500);
 		
 	}
 
@@ -69,7 +68,7 @@ public class AmazonPageTest {
 		
 		driver.switchTo().window(tabs.get(1));
 	
-		Thread.sleep(2500);
+		Thread.sleep(1500);
 		
 		System.out.println(driver.getCurrentUrl());
 		System.out.println(driver.getTitle());
@@ -81,7 +80,7 @@ public class AmazonPageTest {
 		WebElement cart = driver.findElement(By.xpath("//input[@id='add-to-cart-button']")) ;
 		
 		cart.click();
-		Thread.sleep(2500);
+		Thread.sleep(1500);
 	}
 
 	@Then("User refreshes the Page and click on Cart link")
@@ -97,7 +96,7 @@ public class AmazonPageTest {
 	   WebElement proceed = driver.findElement(By.xpath("//input[@name='proceedToRetailCheckout']"));
 	   proceed.click();
 	   
-	   Thread.sleep(2500);
+	   Thread.sleep(1500);
 	}
 	
 	
@@ -121,7 +120,7 @@ public class AmazonPageTest {
 		e2.sendKeys(mobilenumber);
 		e3.sendKeys(password);
 		
-		Thread.sleep(2500);
+		Thread.sleep(2000);
 		
 	}
 	

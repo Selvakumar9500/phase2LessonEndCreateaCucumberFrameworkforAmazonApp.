@@ -1,5 +1,7 @@
 package steps;
 
+
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -35,8 +37,9 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get("https://www.amazon.in/");
-		Thread.sleep(3500);
+		Thread.sleep(3000);
 	}
+	
 	@After
 	public void CloseBrowser()
 	{
