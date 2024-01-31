@@ -18,6 +18,6 @@ import io.cucumber.junit.CucumberOptions;
 		}
 		
 		)
-public class Amazonrunner {
+public class AmazonRunner {
 }
 
